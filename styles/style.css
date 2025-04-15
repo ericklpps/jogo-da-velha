@@ -1,48 +1,31 @@
-body {
-    font-family: sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
-  }
-  
-  h1 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  #tabuleiro {
-    display: grid;
-    grid-template-columns: 100px 100px 100px;
-    margin: 20px auto;
-    border: 1px solid #ccc;
-  }
-  
-  .celula-tabuleiro {
-    width: 100px;
-    height: 100px;
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
-    font-weight: bold;
-    cursor: pointer;
-    box-sizing: border-box;
-  }
-  
-  #pontuacao {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 1.2em;
-  }
-  
-  #situacao-jogo {
-    min-height: 1.5em;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .celula-tabuleiro:hover {
-    background-color: #f0f0f0;
-  }
+#tabuleiro {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 5px;
+  margin: 20px auto;
+  width: max-content;
+}
+
+.celula-tabuleiro {
+  width: 100px;
+  height: 100px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.vencedor {
+  background-color: lightgreen;
+}
+
+#reiniciar {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+h2{
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 20px;
+}
